@@ -6,16 +6,6 @@ function checksum (spreadsheet){
 
   for (let i = 0; i < rows; i++){
     const row = spreadsheet[i]
-
-    // let min = row[0]
-    // let max = row[0]
-    for (let j = 0; j < columns; j++){
-      // if (row[j] < min){
-      //   min = row[j]
-      // } else if (row[j] > max){
-      //   max = row[j]
-      // }
-    }
     checksum += Math.max(...row) - Math.min(...row)
   }
 
